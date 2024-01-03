@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 import random
-number = -626
+number = random.randint(-10000, 10000)
 
 str_number = str(number)
 last_digit = str_number[len(str_number)-1]
