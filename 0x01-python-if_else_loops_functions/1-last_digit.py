@@ -9,6 +9,6 @@ if int(last_int) > 5:
     msg = "and is greater than 5"
 elif last_int == 0:
     msg = "and is 0"
-elif last_int < 6:
+else:
     msg = "and is less than 6 and not 0"
 print("Last digit of", number, "is", last_int, msg)
