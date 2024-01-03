@@ -6,7 +6,7 @@ if number < 0:
     sign = -1
 else:
     sign = 1
-    
+
 str_number = str(number)
 last_digit = str_number[len(str_number)-1]
 last_int = int(last_digit)*sign
