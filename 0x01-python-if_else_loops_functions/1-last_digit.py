@@ -11,4 +11,4 @@ elif last_int == 0:
     msg = "and is 0"
 elif last_int < 6:
     msg = "and is less than 6 and not 0"
-print("Last digit of", number, "is", last_digit, msg)
+print("Last digit of", number, "is", last_int, msg)
