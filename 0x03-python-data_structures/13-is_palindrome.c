@@ -2,14 +2,14 @@
 
 /**
  * reverse_listint - reverses the order of nodes in a linked list
- * @head: pointer to the first node in the list
+ * @pnt_hd: pointer to the first node in the list
  *
  * Return: pointer to the first node in the reversed list
  */
-void reverse_listint(listint_t **head)
+void reverse_listint(listint_t **pnt_hd)
 {
 listint_t *prev = NULL;
-listint_t *current = *head;
+listint_t *current = *pnt_hd;
 listint_t *next = NULL;
 
 while (current)
@@ -20,20 +20,20 @@ prev = current;
 current = next;
 }
 
-*head = prev;
+*pnt_hd = prev;
 }
 
 /**
  * is_palindrome - checks if nodes in a linked list are equal when traversed in reverse
- * @head: double pointer to the linked list
+ * @pnt_hd: double pointer to the linked list
  *
  * Return: 1 if palindrome, 0 if not
  */
-int is_palindrome(listint_t **head)
+int is_palindrome(listint_t **pnt_hd)
 {
-listint_t *slow = *head, *fast = *head, *temp = *head, *dup = NULL;
+listint_t *slow = *pnt_hd, *fast = *pnt_hd, *temp = *pnt_hd, *dup = NULL;
 
-if (*head == NULL || (*head)->next == NULL)
+if (*pnt_hd == NULL || (*pnt_hd)->next == NULL)
 return (1);
 
 while (1)

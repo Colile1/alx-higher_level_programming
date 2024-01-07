@@ -9,27 +9,27 @@
  */
 int main(void)
 {
-listint_t *head;
+listint_t *pnt_hd;
 
-head = NULL;
-add_nodeint_end(&head, 1);
-add_nodeint_end(&head, 17);
-add_nodeint_end(&head, 972);
-add_nodeint_end(&head, 50);
-add_nodeint_end(&head, 98);
-add_nodeint_end(&head, 98);
-add_nodeint_end(&head, 50);
-add_nodeint_end(&head, 972);
-add_nodeint_end(&head, 17);
-add_nodeint_end(&head, 1);
-print_listint(head);
+pnt_hd = NULL;
+add_nodeint_end(&pnt_hd, 1);
+add_nodeint_end(&pnt_hd, 17);
+add_nodeint_end(&pnt_hd, 972);
+add_nodeint_end(&pnt_hd, 50);
+add_nodeint_end(&pnt_hd, 98);
+add_nodeint_end(&pnt_hd, 98);
+add_nodeint_end(&pnt_hd, 50);
+add_nodeint_end(&pnt_hd, 972);
+add_nodeint_end(&pnt_hd, 17);
+add_nodeint_end(&pnt_hd, 1);
+print_listint(pnt_hd);
 
-if (is_palindrome(&head) == 1)
+if (is_palindrome(&pnt_hd) == 1)
 printf("Linked list is a palindrome\n");
 else
 printf("Linked list is not a palindrome\n");
 
-free_listint(head);
+free_listint(pnt_hd);
 
 return (0);
 }

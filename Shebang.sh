@@ -7,7 +7,7 @@ cd 0x03-python-data_structures
 # Loop through each .py file in the directory
 for file in *.py; do
     # Check if the file doesn't start with the shebang line
-    if [[ $(head -n 1 "$file") != "#!/usr/bin/python3" ]]; then
+    if [[ $(pnt_hd -n 1 "$file") != "#!/usr/bin/python3" ]]; then
         # Prepend the shebang line to the file
         echo "#!/usr/bin/python3" | cat - "$file" > temp && mv temp "$file"
         echo "Added shebang to $file"
