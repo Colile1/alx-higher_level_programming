@@ -22,5 +22,6 @@ listint_t *add_nodeint_end(listint_t **pnt_hd, const int n);
 void free_listint(listint_t *pnt_hd);
 
 int is_palindrome(listint_t **pnt_hd);
+void print_python_list_info(PyObject *p);
 
 #endif /* LISTS_H */
