@@ -1,3 +1,7 @@
 #!/usr/bin/python3
-def search_replace(my_list, search, replace):
-    return (replace if num == search else num for num in my_list)
+def uniq_add(my_list=[]):
+    uniqueSet = set()
+    for element in my_list:
+        uniqueSet.add(element)
+    result = sum(uniqueSet)
+    return (result)
