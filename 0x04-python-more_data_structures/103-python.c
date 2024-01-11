@@ -1,13 +1,13 @@
-#include <Python.h>
+#include <python.h>
 #include <stdio.h>
 
 /**
- * print_python_bytes - gives data of the PyBytesObject
+ * print_py_bytes - gives data of the PyBytesObject
  *
  * @p: the PyObject
  */
 
-void print_python_bytes(PyObject *p)
+void print_py_bytes(PyObject *p)
 {
 	Py_ssize_t size = 0, i = 0;
 	char *string = NULL;
@@ -59,7 +59,7 @@ void print_python_list(PyObject *p)
 			item = PyList_GET_ITEM(p, i);
 			printf("Element %d: %s\n", i, item->ob_type->tp_name);
 			if (PyBytes_Check(item))
-				print_python_bytes(item);
+				print_py_bytes(item);
 			i++;
 		}
 	}
