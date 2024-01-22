@@ -2,7 +2,7 @@
 
 # Navigate to the directory containing the Python files
 #cd /mnt/c/Users/enigm/OneDrive/Documents/school/ALX/Software-Engineering/5_Python/alx-higher_level_programming/0x02-python-import_modules#
-cd 0x03-python-data_structures
+cd 0x05-python-exceptions
 
 # Loop through each .py file in the directory
 for file in *.py; do
