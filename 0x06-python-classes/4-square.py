@@ -1,18 +1,18 @@
 #!/usr/bin/python3
-"""Defines a class Square"""
+"""Defines a class Square which represents a square"""
 
 
 class Square:
-    """Represents a square
+    """Represents a square which is a shape with 4 equal sides and 4 90 degree angles
 
     Attributes:
-        __size (int): size of a side of the square
+        __size (int): length of a side of the square 
     """
     def __init__(self, size=0):
-        """initializes the square
+        """Initializes a new Square by setting the size attribute
 
         Args:
-            size (int): size of a side of the square
+            size (int): The length of a side of the new square
 
         Returns:
             None
@@ -20,7 +20,7 @@ class Square:
         self.size = size
 
     def area(self):
-        """calculates the square's area
+        """Calculates and returns the area of the square
 
         Returns:
             The area of the square
@@ -29,19 +29,19 @@ class Square:
 
     @property
     def size(self):
-        """getter of __size
+        """Getter for the __size attribute
 
         Returns:
-            The size of the square
+            The length of a side of the square
         """
         return self.__size
 
     @size.setter
     def size(self, value):
-        """setter of __size
+        """Setter for the __size attribute
 
         Args:
-            value (int): the size of a size of the square
+            value (int): The new length of a side for the square
 
         Returns:
             None

@@ -3,19 +3,19 @@
 
 
 class Square:
-    """Represents a square
+    """This class represents a square
 
     Attributes:
-        __size (int): size of a size of the square
-        __position (tuple): position of the square in 2D space
+        __size (int): length of a side of the square
+        __position (tuple): coordinates of the square in 2D space
     """
 
     def __init__(self, size=0, position=(0, 0)):
-        """initializes the square
+        """Initialize a new Square
 
         Args:
-            size (int): size of a side of the square
-            position (tuple): positoin of the square in 2D space
+            size (int): length of a side of the square
+            position (tuple): coordinates of the square in 2D space
 
         Returns:
             None
@@ -24,28 +24,28 @@ class Square:
         self.position = position
 
     def area(self):
-        """calculates the square's area
+        """Calculate area of the square
 
         Returns:
-            The area of the square
+            Area of the square
         """
         return (self.__size) ** 2
 
     @property
     def size(self):
-        """getter of __size
+        """Get the length of the square's side
 
         Returns:
-            The size of the square
+            Length of the square's side
         """
         return self.__size
 
     @size.setter
     def size(self, value):
-        """setter of __size
+        """Set the length of the square's side
 
         Args:
-            value (int): size of a side of the square
+            value (int): New length of the square's side
 
         Returns:
             None
@@ -59,7 +59,7 @@ class Square:
                 self.__size = value
 
     def my_print(self):
-        """prints the square
+        """Print the square
 
         Returns:
             None
@@ -75,7 +75,7 @@ class Square:
 
     @property
     def position(self):
-        """getter of __position
+        """Get the coordinates of the square
 
         Returns:
             The position of the square in 2D space
@@ -84,10 +84,10 @@ class Square:
 
     @position.setter
     def position(self, value):
-        """setter of __position
+        """Set the coordinates of the square
 
         Args:
-            value (tuple): position of the square in 2D space
+            value (tuple): New coordinates of the square in 2D space
 
         Returns:
             None
