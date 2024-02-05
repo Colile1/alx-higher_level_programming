@@ -1,4 +1,4 @@
-#include "lists.h"
+#INCLUDE "LISTS.H"
 
 /**
  * reverse_listint - reverses the order of nodes in a linked list
