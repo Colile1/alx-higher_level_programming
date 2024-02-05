@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""Defines an inherited class-checking function."""
+"""This function checks if an object is an instance inherited from a class.
+
+It takes the object to check and the class to match as arguments.
+"""
 
 
 def inherits_from(obj, a_class):

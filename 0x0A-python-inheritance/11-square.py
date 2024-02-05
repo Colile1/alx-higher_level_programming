@@ -1,9 +1,9 @@
- a Rectangle subclass Square."""
+"""Represent a square as a subclass of Rectangle."""
 Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
-    """Represent a square."""
+    """Describe a square."""
 
     def __init__(self, size):
         """Initialize a new square.
