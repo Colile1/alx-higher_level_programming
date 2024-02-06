@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Reads stdin and computes metrics. 
+"""Reads stdin and computes metrics.
 
 After 10 lines or CTRL+C, prints:
     - Total size up to that point
@@ -8,8 +8,7 @@ After 10 lines or CTRL+C, prints:
 
 
 def print_stats(size, status_codes):
-    """Print accumulated metrics.
-    
+    """Print accumulated metrics.    
     Args:
         size (int): Accumulated read file size.
         status_codes (dict): Accumulated status code counts.
