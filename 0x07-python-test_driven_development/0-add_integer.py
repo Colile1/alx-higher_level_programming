@@ -3,6 +3,7 @@
 A function that adds two integers
 """
 
+
 def add_integer(a, b=98):
     """
     A function that adds two integers, converts floats to integers
@@ -10,12 +11,12 @@ def add_integer(a, b=98):
     Args:
         a: first integer
         b: second integer
+    Raises:
+        TypeError: If a or b are not either integer or float numbers
 
     Returns:
         The sum of the two given numbers
 
-    Raises:
-        TypeError: If a or b are not either integer or float numbers
     """
     if ((not isinstance(a, int) and not isinstance(a, float))):
         raise TypeError("a must be an integer")
