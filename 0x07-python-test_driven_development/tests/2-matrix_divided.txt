@@ -1,0 +1,41 @@
+How to Use 2-matrix_divided.py
+==============================
+
+This module provides the function `matrix_divided(matrix, div)` to perform element-wise division of a matrix by a number.
+
+Usage
+=====
+
+The `matrix_divided(...)` function divides each element of the input `matrix` by the divisor `div` and returns a new matrix with the results.
+
+Example with integer division:
+    >>> from matrix_divided import matrix_divided
+    >>> matrix = [[8, 16], [24, 32]]
+    >>> matrix_divided(matrix, 4)
+    [[2.0, 4.0], [6.0, 8.0]]
+
+Example with mixed integer and float division:
+    >>> matrix = [[2.5, 5], [7.5, 10.0]]
+    >>> matrix_divided(matrix, 2.5)
+    [[1.0, 2.0], [3.0, 4.0]]
+
+Original matrix remains unaltered:
+    >>> matrix
+    [[2.5, 5], [7.5, 10.0]]
+
+Quotients are rounded to two decimal places:
+    >>> matrix = [[1.123, 2.345], [3.678, 4.987]]
+    >>> matrix_divided(matrix, 1.5)
+    [[0.75, 1.56], [2.45, 3.32]]
+
+Handling Invalid Divisors
+=========================
+
+The divisor `div` must be a non-zero number (int or float), or an exception is raised.
+TypeError is raised for non-numeric divisors:
+    >>> matrix_divided(matrix, 'abc')
+    TypeError: div must be a number
+
+ZeroDivisionError is raised for zero divisor:
+    >>> matrix_divided(matrix, 0)
+    ZeroDivisionError: division by zero
