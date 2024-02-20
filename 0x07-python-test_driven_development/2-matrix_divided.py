@@ -3,6 +3,7 @@
 A function that divides the numbers of a matrix
 """
 
+
 def matrix_divided(matrix, div):
     """
     Args:
@@ -14,9 +15,9 @@ def matrix_divided(matrix, div):
                    If the elemetns of the lists aren't integers/floats
                    If div is not an integer/float number
                    If the lists of the matrix don't have the same size
-        
+
         ZeroDivisionError: If div is zero
-    
+
     Returns:
         A new matrix with the result of the division
 
@@ -35,6 +36,6 @@ def matrix_divided(matrix, div):
         raise TypeError("Each row of the matrix must have the same size")
 
     if not all(isinstance(num, (int, float)) for row in matrix for num in row):
-        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+        raise TypeError("matrix must be a list of lists of integers/floats")
 
     return ([[round(num / div, 2) for num in row] for row in matrix])
