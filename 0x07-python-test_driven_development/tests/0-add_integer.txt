@@ -1,0 +1,27 @@
+"""
+0-add_integer module
+
+This module contains one function, add_integer(a, b=98) that returns the sum of two integers.
+
+Usage:
+
+import 0-add_integer
+
+print(0-add_integer.add_integer(2, 3))
+# returns 5 
+
+print(0-add_integer.add_integer(2)) 
+# returns 100
+
+The function handles type checking and casting for the arguments.
+
+Some test cases:
+
+add_integer(2, 3) -> 5
+add_integer(2) -> 100 
+add_integer(2.0, 3) -> 5
+add_integer(2, 3.0) -> 5
+add_integer('2', 3) -> 5  
+add_integer('2', '3') -> 5
+
+"""
