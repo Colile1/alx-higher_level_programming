@@ -6,17 +6,17 @@ Defines a matrix division function.
 
 def matrix_divided(matrix, div):
     """
-    Divides all elements of a matrix by div. 
+    Divides all elements of a matrix by div.
 
     Args:
-        matrix: A list of lists of ints/floats. 
+        matrix: A list of lists of ints/floats.
         div: The number to divide the matrix by.
 
     Returns:
         A new matrix with all elements divided by div.
 
     Raises:
-        TypeError: If matrix is not a list of lists, div is not a number, 
+        TypeError: If matrix is not a list of lists, div is not a number,
                 or matrix contains non-numbers.
         ZeroDivisionError: If div is 0.
     """
