@@ -12,7 +12,7 @@ def matrix_divided(matrix, div):
 
     Raises:
         TypeError: If the elements of the matrix aren't lists
-                   If the elemetns of the lists aren't integers/floats
+                   If the elements of the lists aren't integers/floats
                    If div is not an integer/float number
                    If the lists of the matrix don't have the same size
 
