@@ -3,6 +3,7 @@ How to Use 3-say_my_name.py
 ===========================
 
 This modules defines a function ``say_my_name(first_name, last_name="")``.
+THE function that prints "My name iS <first name> <last name>"
 
 Usage
 =====
