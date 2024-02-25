@@ -7,8 +7,8 @@ A function that prints My name is <first name> <last name>
 def say_my_name(first_name, last_name=""):
     """
     Args:
-        first_name (str): mt first name
-        last_name (str): mt first name
+        first_name (str): First name
+        last_name (str): Last name
     Raises:
         TypeError: if first_name or last_name is not a string
 
