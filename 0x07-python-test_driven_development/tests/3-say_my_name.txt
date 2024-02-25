@@ -11,22 +11,24 @@ Usage
 
 ::
 
-    >>> from 3-say_my_name import say_my_name
-    >>> say_my_name("John", "Doe")
-    My name is John Doe
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+    >>> say_my_name("Kwame", "Acheampong")
+    My name is Kwame Acheampong
 
 ::
 
-    >>> say_my_name("Jane", "Smith") 
-    My name is Jane Smith
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+    >>> say_my_name("Akosua", "Adoma") 
+    My name is Akosua Adoma
 
 The parameter ```last_name``` is optional. If no last name is provided,
 an empty string is printed instead.
 
 ::
 
-    >>> say_my_name("Bob")
-    My name is Bob
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+    >>> say_my_name("Kwabena")
+    My name is Kwabena
 
 Invalid Names
 =============
@@ -36,26 +38,30 @@ a TypeError is raised.
 
 ::
 
-    >>> say_my_name(123, "James")
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+    >>> say_my_name(123, "Ama")
     Traceback (most recent call last):
     TypeError: first_name must be a string
 
 ::
 
-    >>> say_my_name("Mary", [1, 2, 3])
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+    >>> say_my_name("Yaa", [1, 2, 3])
     Traceback (most recent call last):
     TypeError: last_name must be a string  
 
 ::
 
-    >>> say_my_name({"name": "Peter"}, 3.14)
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+    >>> say_my_name({"name": "Ama"}, 3.14)
     Traceback (most recent call last):
     TypeError: first_name must be a string
 
-At least one name must be provided. 
+At least one name must be provided.
 
 ::
 
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
     >>> say_my_name()
     Traceback (most recent call last):
     TypeError: say_my_name() missing 1 required positional argument: 'first_name'
