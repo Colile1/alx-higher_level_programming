@@ -10,17 +10,17 @@ Usage
 
 ``say_my_name(...)`` prints "My name is <first_name> <last_name>".
 
-    >>> say_my_name = __import__('3-say_my_name').say_my_name
-    >>> say_my_name("Colile", "Sibanda")
+    say_my_name = __import__('3-say_my_name').say_my_name
+    say_my_name("Colile", "Sibanda")
     My name is Colile Sibanda
 
-    >>> say_my_name("Cornelius Maxwell", "Jones II")
+    say_my_name("Cornelius Maxwell", "Jones II")
     My name is Cornelius Maxwell Jones II
 
 The parameter ```last_name``` is optional. If no last name is provided,
 an empty string is printed instead.
 
-    >>> say_my_name("Colile")
+    say_my_name("Colile")
     My name is Colile 
 
 Invalid Names
@@ -29,24 +29,24 @@ Invalid Names
 The parameters ``first_name`` and ``last_name``` must be strings. Otherwise,
 a TypeError is raised.
 
-    >>> say_my_name(6, "Loki")
+    say_my_name(6, "Loki")
     Traceback (most recent call last):
     TypeError: first_name must be a string
 
-    >>> say_my_name("Uchiha", ["Leaf", "Konoha", "Ninja"])
+    say_my_name("Uchiha", ["Leaf", "Konoha", "Ninja"])
     Traceback (most recent call last):
     TypeError: last_name must be a string
 
-    >>> say_my_name({"Uchiha": 6, "Loki": 23}, 7.7)
+    say_my_name({"Uchiha": 6, "Loki": 23}, 7.7)
     Traceback (most recent call last):
     TypeError: first_name must be a string
 
-    >>> say_my_name(None)
+    say_my_name(None)
     Traceback (most recent call last):
     TypeError: first_name must be a string
 
 At least one name must be provided.
 
-    >>> say_my_name()
+    say_my_name()
     Traceback (most recent call last):
     TypeError: say_my_name() missing 1 required positional argument: 'first_name'
