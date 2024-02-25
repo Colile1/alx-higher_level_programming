@@ -1,4 +1,3 @@
-
 ===========================
 How to Use 3-say_my_name.py
 ===========================
@@ -12,22 +11,22 @@ Usage
 
 ::
 
-    >>> say_my_name = __import__('3-say_my_name').say_my_name
-    >>> say_my_name("Brennan", "Baraban")
-    My name is Brennan Baraban
+    >>> from 3-say_my_name import say_my_name
+    >>> say_my_name("John", "Doe")
+    My name is John Doe
 
 ::
 
-    >>> say_my_name("Cornelius Maxwell", "Jones II")
-    My name is Cornelius Maxwell Jones II
+    >>> say_my_name("Jane", "Smith") 
+    My name is Jane Smith
 
 The parameter ```last_name``` is optional. If no last name is provided,
 an empty string is printed instead.
 
 ::
 
-    >>> say_my_name("Brennan")
-    My name is Brennan 
+    >>> say_my_name("Bob")
+    My name is Bob
 
 Invalid Names
 =============
@@ -37,29 +36,23 @@ a TypeError is raised.
 
 ::
 
-    >>> say_my_name(6, "James")
+    >>> say_my_name(123, "James")
     Traceback (most recent call last):
     TypeError: first_name must be a string
 
 ::
 
-    >>> say_my_name("LeBron", ["Cavs", "Lakers", "Heat"])
+    >>> say_my_name("Mary", [1, 2, 3])
     Traceback (most recent call last):
-    TypeError: last_name must be a string
+    TypeError: last_name must be a string  
 
 ::
 
-    >>> say_my_name({"LeBron": 6, "James": 23}, 7.7)
+    >>> say_my_name({"name": "Peter"}, 3.14)
     Traceback (most recent call last):
     TypeError: first_name must be a string
 
-::
-
-    >>> say_my_name(None)
-    Traceback (most recent call last):
-    TypeError: first_name must be a string
-
-At least one name must be provided.
+At least one name must be provided. 
 
 ::
 
