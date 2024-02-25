@@ -10,7 +10,7 @@ for root, dirs, files in os.walk('.'):
             with open(path, 'r+') as f:
                 content = f.read()
                 f.seek(0)
-                f.write('#!/usr/bin/python3\n') 
+                f.write('#!/usr/bin/python3\n"""\n\n"""\n\n\n') 
                 f.write(content)
             st = os.stat(path)
             os.chmod(path, st.st_mode | stat.S_IEXEC | stat.S_IXUSR | stat.S_IXGRP | stat.S_IXOTH)
