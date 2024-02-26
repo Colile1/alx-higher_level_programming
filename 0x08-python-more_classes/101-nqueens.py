@@ -5,13 +5,13 @@ Solves the N-queens puzzle.
 def is_safe(board, row, col, N):
     """
     Checks if it's safe to place a queen at the given position on the board.
-    
+
     Parameters:
     board (list of lists): The chess board configuration
     row (int): The row to check
     col (int): The column to check
     N (int): The size of the board
-    
+
     Returns:
     bool: True if it's safe to place a queen, False otherwise
     """
@@ -32,13 +32,13 @@ def is_safe(board, row, col, N):
 def solve_n_queens_util(board, row, N, solutions):
     """
     Recursive backtracking function to solve the N-Queens problem.
-    
+
     Parameters:
     - board: a 2D list representing the chess board
     - row: the current row being explored
     - N: the size of the board (number of rows and columns)
     - solutions: a list to store the valid solutions
-    
+
     Returns:
     None
     """
