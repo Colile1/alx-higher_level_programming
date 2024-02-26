@@ -18,7 +18,7 @@ class Rectangle:
         __init__(): Constructor, initializes width and height.
         @property width: Getter for width.
         @width.setter: Setter for width, checks type and value.
-        @property height: Getter for height. 
+        @property height: Getter for height.
         @height.setter: Setter for height, checks type and value.
     """
 

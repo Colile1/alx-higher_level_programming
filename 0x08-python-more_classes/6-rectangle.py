@@ -7,7 +7,7 @@ A class Rectangle that defines a rectangle by: (based on 5-rectangle.py)
 class Rectangle:
     """
     Rectangle class:
-    Defines a rectangle with attributes like height, width, area, and perimeter.
+    Defines a rectangle with attributes like height, width, area, and perimeter
     Keeps track of number of Rectangle instances.
     Provides methods to get/set width and height.
     Contains methods to calculate area and perimeter.
@@ -85,4 +85,3 @@ class Rectangle:
         """Print message when a Rectangle is deleted."""
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
-

@@ -18,7 +18,7 @@ class Rectangle:
         area(self) - calculates area
         perimeter(self) - calculates perimeter
         __str__(self) - prints rectangle with #
-        __repr__(self) 
+        __repr__(self)
         __del__(self) - prints message when deleting
     """
 

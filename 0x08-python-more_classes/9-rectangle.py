@@ -5,19 +5,19 @@ A class Rectangle that defines a rectangle by: (based on 8-rectangle.py)
 
 
 class Rectangle:
-        """
-        Defines a Rectangle class with attributes width and height.
+    """
+    Defines a Rectangle class with attributes width and height.
 
-        Provides getter and setter methods for width and height attributes. 
-        Validates width and height are integers >= 0.
+    Provides getter and setter methods for width and height attributes.
+    Validates width and height are integers >= 0.
 
-        Contains methods to calculate area and perimeter.
-        Overrides __str__ and __repr__ methods. 
-        Keeps track of number of instances and decrements on __del__.
+    Contains methods to calculate area and perimeter.
+    Overrides __str__ and __repr__ methods.
+    Keeps track of number of instances and decrements on __del__.
 
-        Contains class methods bigger_or_equal to compare two Rectangles, 
-        and square to generate a square Rectangle.
-        """
+    Contains class methods bigger_or_equal to compare two Rectangles,
+    and square to generate a square Rectangle.
+    """
     number_of_instances = 0
     print_symbol = '#'
 
@@ -83,4 +83,3 @@ class Rectangle:
     @classmethod
     def square(cls, size=0):
         return cls(size, size)
-

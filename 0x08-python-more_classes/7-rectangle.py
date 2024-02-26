@@ -9,7 +9,7 @@ class Rectangle:
 
     Attributes:
         number_of_instances (int): Number of Rectangle instances.
-        print_symbol (any): Symbol used for string representation. 
+        print_symbol (any): Symbol used for string representation.
 
     Methods:
         __init__(self, width=0, height=0): Initialize a Rectangle.
@@ -78,4 +78,3 @@ class Rectangle:
         """Print a message when a Rectangle is deleted."""
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
-

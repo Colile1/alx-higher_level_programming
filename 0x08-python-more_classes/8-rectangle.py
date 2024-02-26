@@ -12,7 +12,7 @@ class Rectangle:
     Methods:
     - __init__(self, width=0, height=0): initialize width and height
     - width(self): property getter for width
-    - width(self, value): property setter for width 
+    - width(self, value): property setter for width
     - height(self): property getter for height
     - height(self, value): property setter for height
     - area(self): calculate area
@@ -85,4 +85,3 @@ class Rectangle:
         if rect_1.area() >= rect_2.area():
             return rect_1
         return rect_2
-
