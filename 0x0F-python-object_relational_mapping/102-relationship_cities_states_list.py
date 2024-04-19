@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-State objects, and corresponding City objects in database hbtn_0e_101_usa
+City objects from the database hbtn_0e_101_usa
 """
 
 if __name__ == "__main__":
@@ -8,6 +8,7 @@ if __name__ == "__main__":
     import sys
     from relationship_state import Base, State
     from relationship_city import City
+    
     from sqlalchemy import create_engine
     from sqlalchemy.orm import Session
     from sqlalchemy.schema import Table
@@ -18,8 +19,6 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
 
     session = Session(engine)
-    for state in session.query(State).order_by(State.id).all():
-        print("{}: {}".format(state.id, state.name))
-        for city in state.cities:
-            print("    {}: {}".format(city.id, city.name))
+    for city in session.query(City).order_by(City.id).all():
+        print("{}: {} -> {}".format(city.id, city.name, city.state.name))
     session.close()
