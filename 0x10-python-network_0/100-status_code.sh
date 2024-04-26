@@ -1,5 +1,2 @@
 #!/bin/bash
-
-url=$1
-status_code=$(curl -s -o /dev/null -w "%{http_code}" $url)
-echo "$status_code"
+awk 'NR==1{printf "%s", $2}' test7 $(curl -sI "$1" -o test7)

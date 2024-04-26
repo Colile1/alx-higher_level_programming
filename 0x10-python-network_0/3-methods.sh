@@ -1,7 +1,2 @@
 #!/bin/bash
-
-url=$1
-
-methods=$(curl -X OPTIONS $url -s -o /dev/null -w '%{http_code}' | tail -n 1)
-
-echo $methods
+curl -Is "$1" | grep "Allow:" | cut -d ":" -f 2 | cut -c 2- | rev | cut -c 2- | rev
