@@ -1,5 +1,5 @@
 -- MySQL dump 10.13  Distrib 5.5.54, for debian-linux-gnu (x86_64)
---
+-- 
 -- Host: localhost    Database: hbtn_0c_0
 -- ------------------------------------------------------
 -- Server version	5.5.54-0ubuntu0.14.04.1
@@ -15,9 +15,9 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
---
+-- 
 -- Table structure for table `temperatures`
---
+-- 
 
 DROP TABLE IF EXISTS `temperatures`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -31,9 +31,9 @@ CREATE TABLE `temperatures` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
+-- 
 -- Dumping data for table `temperatures`
---
+-- 
 
 LOCK TABLES `temperatures` WRITE;
 /*!40000 ALTER TABLE `temperatures` DISABLE KEYS */;
