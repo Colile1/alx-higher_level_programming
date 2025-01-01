@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-''' contains the class definition of a State '''
+'''
+contains the class definition of a State
+'''
 from sqlalchemy import Column, Integer, String, MetaData, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
@@ -7,6 +9,7 @@ from model_state import Base, State
 
 mymetadata = MetaData()
 Base = declarative_base(metadata=mymetadata)
+
 
 class City(Base):
     ''' inherits from Base '''
