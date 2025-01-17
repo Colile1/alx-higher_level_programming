@@ -1,2 +1,3 @@
 #!/bin/bash
-awk 'NR==1{printf "%s", $2}' test7 $(curl -sI "$1" -o test7)
+# This script displays only the status code of a request.
+curl -s -o /dev/null -w "%{http_code}" "$1"

@@ -1,2 +1,3 @@
 #!/bin/bash
-curl -Is "$1" | grep "Allow:" | cut -d ":" -f 2 | cut -c 2- | rev | cut -c 2- | rev
+# This script sends a request and displays the accepted HTTP methods.
+curl -s -I "$1" | grep Allow | cut -d ' ' -f2-
